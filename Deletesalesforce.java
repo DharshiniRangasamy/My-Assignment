@@ -23,15 +23,15 @@ public class Deletesalesforce {
 		driver.executeScript("arguments[0].click()", element);
 		driver.findElement(By.xpath("//div[@data-aura-class='forceVirtualAction']//a[@role='button']")).click();
 		driver.findElement(By.xpath("//a[@title='Delete']")).click();
-	//	WebElement element2 = driver.findElement(By.xpath("//a[@title='Salesforce Automation by Dharshinirangasamy']"));
-	//	String text = element2.getText();
-		//if(text.equals("Salesforce Automation by Dharshinirangasamy")) {
-		//	System.out.println("Not Deleted");
-		//}
-		//else {
-		//	System.out.println("Deleted");
-		//}
+		WebElement element2 = driver.findElement(By.xpath("//a[@title='Salesforce Automation by Dharshinirangasamy']"));
+	    String text = element2.getText();
+		if(text.equals("Salesforce Automation by Dharshinirangasamy")) {
+		System.out.println("Not Deleted");
+		}
+		else {
+			System.out.println("Deleted");
+		}
 		
-	//}
+	}
 
-//}
+}
